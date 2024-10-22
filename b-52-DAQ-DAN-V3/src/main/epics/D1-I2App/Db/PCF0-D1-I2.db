@@ -1,0 +1,1382 @@
+#FPGA variables 
+record(ai,"Status")
+{
+	field(DESC, "Status")
+	field(DTYP, "asynInt32")
+	field(SCAN, "1 second")
+	field(INP, "@asyn(B-0,0)Status")
+}
+record (ai,"D1-I2:Clock100PLLUnlocked")
+{
+	field(DESC, "Clock100PLLUnlocked")
+	field(DTYP, "asynInt32")
+	field(INP, "@asyn(B-0,0)Clock100PLLUnlocked")
+	field(SCAN, "1 second")
+}
+record (ai,"D1-I2:EEPROMPowerEnabled")
+{
+	field(DESC, "EEPROMPowerEnabled")
+	field(DTYP, "asynInt32")
+	field(INP, "@asyn(B-0,0)EEPROMPowerEnabled")
+	field(SCAN, "1 second")
+}
+record (ai,"D1-I2:IOModuleIOEnabled")
+{
+	field(DESC, "IOModuleIOEnabled")
+	field(DTYP, "asynInt32")
+	field(INP, "@asyn(B-0,0)IOModuleIOEnabled")
+	field(SCAN, "1 second")
+}
+record (ai,"D1-I2:IOModuleInitializationDone")
+{
+	field(DESC, "IOModuleInitializationDone")
+	field(DTYP, "asynInt32")
+	field(INP, "@asyn(B-0,0)IOModuleInitializationDone")
+	field(SCAN, "1 second")
+}
+record (ai,"D1-I2:IOModulePowerEnabled")
+{
+	field(DESC, "IOModulePowerEnabled")
+	field(DTYP, "asynInt32")
+	field(INP, "@asyn(B-0,0)IOModulePowerEnabled")
+	field(SCAN, "1 second")
+}
+record (ai,"D1-I2:IOModulePowerGood")
+{
+	field(DESC, "IOModulePowerGood")
+	field(DTYP, "asynInt32")
+	field(INP, "@asyn(B-0,0)IOModulePowerGood")
+	field(SCAN, "1 second")
+}
+record (ai,"D1-I2:IOModulePresent")
+{
+	field(DESC, "IOModulePresent")
+	field(DTYP, "asynInt32")
+	field(INP, "@asyn(B-0,0)IOModulePresent")
+	field(SCAN, "1 second")
+}
+
+record (ai,"D1-I2:DeviceTemperature")
+{
+	field(DESC, "DeviceTemperature")
+	field(DTYP, "asynInt32")
+	field(INP, "@asyn(B-0,0)DeviceTemperature")
+	field(SCAN, "1 second")
+}
+
+record(mbbi,"D1-I2:streamstate")
+{
+	field(DESC, "state of the stream")
+	field(DTYP, "asynInt32")
+	field(SCAN, "1 second")
+	field(INP, "@asyn(B-0,0)streamstate")
+	field(ZRVL,"0")
+	field(ONVL,"1")
+	field(TWVL,"2")
+	field(THVL,"3")
+	field(FRVL,"4")
+	field(FVVL,"5")
+	field(SXVL,"6")
+	field(SVVL, "99")
+	field(ZRST,"idle")
+	field(ONST,"finite transfer")
+	field(TWST,"continuous")
+	field(THST,"done")
+	field(FRST,"error")
+	field(FVST,"not ready")
+	field(SXST,"cancel")
+	field(SVST, "undefined value")
+}
+record(mbbi,"D1-I2:measurement_streamstate")
+{
+	field(DESC, "state of the stream")
+	field(DTYP, "asynInt32")
+	field(SCAN, "1 second")
+	field(INP, "@asyn(B-0,0)measurement_streamstate")
+	field(ZRVL,"0")
+	field(ONVL,"1")
+	field(TWVL,"2")
+	field(THVL,"3")
+	field(FRVL,"4")
+	field(FVVL,"5")
+	field(SXVL,"6")
+	field(SVVL, "99")
+	field(ZRST,"idle")
+	field(ONST,"finite transfer")
+	field(TWST,"continuous")
+	field(THST,"done")
+	field(FRST,"error")
+	field(FVST,"not ready")
+	field(SXST,"cancel")
+	field(SVST, "undefined value")
+}
+
+record (ai,"D1-I2:Device12VPower")
+{
+	field(DESC, "Device12VPower")
+	field(DTYP, "asynInt32")
+	field(INP, "@asyn(B-0,0)Device12VPower")
+	field(SCAN, "1 second")
+}
+record (ai,"D1-I2:Device33VPower")
+{
+	field(DESC, "Device33VPower")
+	field(DTYP, "asynInt32")
+	field(INP, "@asyn(B-0,0)Device33VPower")
+	field(SCAN, "1 second")
+}
+record (ai,"D1-I2:ExpectedIOModuleID")
+{
+	field(DESC, "ExpectedIOModuleID")
+	field(DTYP, "asynInt32")
+	field(INP, "@asyn(B-0,0)ExpectedIOModuleID")
+	field(SCAN, "1 second")
+}
+record (ai,"D1-I2:InsertedIOModuleID")
+{
+	field(DESC, "InsertedIOModuleID")
+	field(DTYP, "asynInt32")
+	field(INP, "@asyn(B-0,0)InsertedIOModuleID")
+	field(SCAN, "1 second")
+}
+record (ai,"D1-I2:SinglePulsesCountRate")
+{
+	field(DESC, "SinglePulsesCountRate")
+	field(DTYP, "asynInt32")
+	field(INP, "@asyn(B-0,0)SinglePulsesCountRate")
+	field(SCAN, "1 second")
+}
+record (ai,"D1-I2:SinglePulsesRegistered")
+{
+	field(DESC, "SinglePulsesRegistered")
+	field(DTYP, "asynInt32")
+	field(INP, "@asyn(B-0,0)SinglePulsesRegistered")
+	field(SCAN, "1 second")
+}
+record (ai,"D1-I2:TotalCountRate")
+{
+	field(DESC, "TotalCountRate")
+	field(DTYP, "asynInt32")
+	field(INP, "@asyn(B-0,0)TotalCountRate")
+	field(SCAN, "1 second")
+}
+record (ai,"D1-I2:TotalPulsesRegistered")
+{
+	field(DESC, "TotalPulsesRegistered")
+	field(DTYP, "asynInt32")
+	field(INP, "@asyn(B-0,0)TotalPulsesRegistered")
+	field(SCAN, "1 second")
+}
+record (ai,"D1-I2:streammeta")
+{
+	field(DESC, "streammetadata")
+	field(DTYP, "asynInt32")
+	field(INP, "@asyn(B-0,0)streammetadata")
+	field(SCAN, "1 second")
+}
+record (ai,"D1-I2:measurement_streammeta")
+{
+	field(DESC, "streammetadata")
+	field(DTYP, "asynInt32")
+	field(INP, "@asyn(B-0,0)measurement_streammetadata")
+	field(SCAN, "1 second")
+}
+record (ai,"D1-I2:streamsamplestransferred")
+{
+	field(DESC, "streamsamplestransferred")
+	field(DTYP, "asynInt32")
+	field(INP, "@asyn(B-0,0)streamsamplestransferred")
+	field(SCAN, "1 second")
+}
+record (ai,"D1-I2:measurement_streamsamplestransferred")
+{
+	field(DESC, "streamsamplestransferred")
+	field(DTYP, "asynInt32")
+	field(INP, "@asyn(B-0,0)measurement_streamsamplestransferred")
+	field(SCAN, "1 second")
+}
+
+record (bo,"D1-I2:ThresholdValid")
+{
+	field(DESC, "ThresholdValid")
+	field(DTYP, "asynInt32")
+	field(OUT, "@asyn(B-0,0)ThresholdValid")
+	field(SCAN, "Passive")
+}
+record (bo,"D1-I2:start")
+{
+	field(DESC, "start")
+	field(DTYP, "asynInt32")
+	field(OUT, "@asyn(B-0,0)start")
+	field(SCAN, "Passive")
+}
+record (bo,"D1-I2:reseter")
+{
+	field(DESC, "start")
+	field(DTYP, "asynInt32")
+	field(OUT, "@asyn(B-0,0)Reseter")
+	field(SCAN, "Passive")
+    	field(VAL,"0")
+}
+record (mbbo,"D1-I2:downloader")
+{
+	field(DESC, "start")
+	field(DTYP, "asynInt32")
+	field(OUT, "@asyn(B-0,0)Downloader")
+    field(ONVL,"1")
+    field(TWVL,"2")
+    field (THVL, "3")
+    field(ONST,"AmplitudeSpectrum")
+	field(TWST,"RawDataAcquisition")
+    field (THST, "SpectrAndData")
+	field(SCAN, "Passive")
+    
+}
+record (bo,"D1-I2:configurefifo")
+{
+	field(DESC, "start")
+	field(DTYP, "asynInt32")
+	field(OUT, "@asyn(B-0,0)ConfigureFIFOControl")
+	field(SCAN, "Passive")
+     field(VAL,"0")
+}
+
+record(mbbo,"D1-I2:streamrequeststate")
+{
+    field(DESC, "state of the stream")
+	field(DTYP, "asynInt32")
+	field(SCAN, "Passive")
+	field(OUT, "@asyn(B-0,0)streamrequeststate")
+	field(ZRVL,"0")
+	field(ONVL,"1")
+	field(TWVL,"2")
+	field(THVL,"3")
+	field(FRVL,"4")
+	field(FVVL,"5")
+	field(SXVL,"6")
+	field(SVVL, "99")
+	field(ZRST,"idle")
+	field(ONST,"finite transfer")
+	field(TWST,"continuous")
+	field(THST,"done")
+	field(FRST,"error")
+	field(FVST,"not ready")
+	field(SXST,"cancel")
+	field(SVST, "undefined value")
+    field(VAL,"0")
+
+}
+record(mbbo,"D1-I2:measurement_streamrequeststate")
+{
+	field(DESC, "state of the stream")
+	field(DTYP, "asynInt32")
+	field(SCAN, "Passive")
+	field(OUT, "@asyn(B-0,0)measurement_streamrequeststate")
+	field(ZRVL,"0")
+	field(ONVL,"1")
+	field(TWVL,"2")
+	field(THVL,"3")
+	field(FRVL,"4")
+	field(FVVL,"5")
+	field(SXVL,"6")
+	field(SVVL, "99")
+	field(ZRST,"idle")
+	field(ONST,"finite transfer")
+	field(TWST,"continuous")
+	field(THST,"done")
+	field(FRST,"error")
+	field(FVST,"not ready")
+	field(SXST,"cancel")
+	field(SVST, "undefined value")
+    field(VAL,0)
+
+}
+
+record (ao,"D1-I2:Threshold")
+{
+	field(DESC, "Threshold")
+	field(DTYP, "asynInt32")
+	field(OUT, "@asyn(B-0,0)Threshold")
+	field(SCAN, "Passive")
+}
+
+record (ao,"D1-I2:ChannelSelect")
+{
+	field(DESC, "ChannelSelect")
+	field(DTYP, "asynInt32")
+	field(OUT, "@asyn(B-0,0)ChannelSelect")
+	field(SCAN, "Passive")
+	field(VAL, "1")
+}
+
+record (ao,"D1-I2:maxticksperpulse")
+{
+	field(DESC, "maxticksperpulse")
+	field(DTYP, "asynInt32")
+	field(OUT, "@asyn(B-0,0)maxticksperpulse")
+	field(SCAN, "Passive")
+}
+
+record (ao,"D1-I2:minticksperpulse")
+{
+	field(DESC, "minticksperpulse")
+	field(DTYP, "asynInt32")
+	field(OUT, "@asyn(B-0,0)minticksperpulse")
+	field(SCAN, "Passive")
+}
+
+record (ao,"D1-I2:streamnumsamples")
+{
+	field(DESC, "streamnumsamples")
+	field(DTYP, "asynInt32")
+	field(OUT, "@asyn(B-0,0)streamnumsamples")
+	field(SCAN, "Passive")
+}
+record (ao,"D1-I2:measurement_streamnumsamples")
+{
+	field(DESC, "streamnumsamples")
+	field(DTYP, "asynInt32")
+	field(OUT, "@asyn(B-0,0)measurement_streamnumsamples")
+	field(SCAN, "Passive")
+}
+
+#FIFO configuration 
+
+record(ai,"FIFO_depth")
+{
+	field(DESC, "Status")
+	field(DTYP, "asynInt32")
+	field(SCAN, "1 second")
+	field(INP, "@asyn(B-0,0)FIFO_depth")
+}
+record(ai,"DataBufferSize")
+{
+	field(DESC, "DataBufferSize")
+	field(DTYP, "asynInt32")
+	field(SCAN, "1 second")
+	field(INP, "@asyn(B-0,0)DataBufferSize")
+}
+record(ai,"NumberOfElements")
+{
+	field(DESC, "NumberOfElements")
+	field(DTYP, "asynInt32")
+	field(SCAN, "1 second")
+	field(INP, "@asyn(B-0,0)NumberOfElements")
+}
+
+
+
+##waveform generation
+record (ai,"D1-I2:WFGNode-Amplitude_RBV")
+{
+	field(DESC, "WFGNode-Amplitude_RBV")
+	field(DTYP, "asynFloat64")
+	field(INP, "@asyn(B-0,0)WFGNode-Amplitude_RBV")
+	field(SCAN, "I/O Intr")
+}
+
+record (waveform,"D1-I2:WFGNode-Data")
+{
+	field(DESC, "The input data to control system from Wa")
+	field(DTYP, "asynFloat64ArrayIn")
+	field(FTVL, "DOUBLE")
+	field(INP, "@asyn(B-0,0)WFGNode-Data")
+	field(NELM, "128")
+	field(SCAN, "I/O Intr")
+}
+
+record (waveform,"D1-I2:WFGNode-DataAWG")
+{
+	field(DESC, "AWG Samples for signal generation")
+	field(DTYP, "asynFloat64ArrayOut")
+	field(FTVL, "DOUBLE")
+	field(INP, "@asyn(B-0,0)WFGNode-DataAWG")
+	field(NELM, "128")
+	field(SCAN, "Passive")
+}
+
+record (ai,"D1-I2:WFGNode-Frequency_RBV")
+{
+	field(DESC, "Generation frequency ReadBack")
+	field(DTYP, "asynFloat64")
+	field(INP, "@asyn(B-0, 0)WFGNode-Frequency_RBV")
+	field(SCAN, "I/O Intr")
+}
+
+record (mbbi,"D1-I2:WFGNode-SignalTypeRBV")
+{
+	field(DESC, "WFGNode-SignalType")
+	field(DTYP, "asynInt32")
+	field(EIST, "SAWTOOTH")
+	field(EIVL, "8")
+	field(FRST, "SQUARE")
+	field(FRVL, "4")
+	field(FVST, "TRIANGLE")
+	field(FVVL, "5")
+	field(INP, "@asyn(B-0, 0)WFGNode-SignalType_RBV")
+	field(ONST, "SPLINE")
+	field(ONVL, "1")
+	field(SCAN, "Passive")
+	field(SVST, "RUNNING")
+	field(SVVL, "7")
+	field(SXST, "PULSE")
+	field(SXVL, "6")
+	field(THST, "SINE")
+	field(THVL, "3")
+	field(TWST, "DC")
+	field(TWVL, "2")
+	field(ZRST, "WAVEFORM")
+	field(ZRVL, "0")
+}
+
+record (ao,"D1-I2:WFGNode-Amplitude")
+{
+	field(DESC, "Amplitude")
+	field(DRVH, "100000")
+	field(DRVL, "0")
+	field(DTYP, "asynFloat64")
+	field(HOPR, "1000000")
+	field(LOPR, "0")
+	field(OUT, "@asyn(B-0, 0)WFGNode-Amplitude")
+	field(SCAN, "Passive")
+}
+
+record (ao,"D1-I2:WFGNode-Decimation")
+{
+	field(DESC, "Decimation")
+	field(DRVH, "100000")
+	field(DRVL, "0")
+	field(DTYP, "asynInt32")
+	field(HOPR, "10000")
+	field(LOPR, "0")
+	field(OUT, "@asyn(B-0, 0)WFGNode-Decimation")
+	field(SCAN, "Passive")
+}
+
+record (ao,"D1-I2:WFGNode-Frequency")
+{
+	field(DESC, "Frequency")
+	field(DRVH, "100000")
+	field(DRVL, "0")
+	field(DTYP, "asynFloat64")
+	field(HOPR, "10000000")
+	field(LOPR, "0")
+	field(OUT, "@asyn(B-0, 0)WFGNode-Frequency")
+	field(SCAN, "Passive")
+}
+
+record (mbbo,"D1-I2:WFGNode-SignalType")
+{
+	field(DESC, "WFGNode-SignalType")
+	field(DTYP, "asynInt32")
+	field(EIST, "SAWTOOTH")
+	field(EIVL, "8")
+	field(FRST, "SQUARE")
+	field(FRVL, "4")
+	field(FVST, "TRIANGLE")
+	field(FVVL, "5")
+	field(ONST, "SPLINE")
+	field(ONVL, "1")
+	field(OUT, "@asyn(B-0, 0)WFGNode-SignalType")
+	field(SCAN, "Passive")
+	field(SVST, "RUNNING")
+	field(SVVL, "7")
+	field(SXST, "PULSE")
+	field(SXVL, "6")
+	field(THST, "SINE")
+	field(THVL, "3")
+	field(TWST, "DC")
+	field(TWVL, "2")
+	field(ZRST, "WAVEFORM")
+	field(ZRVL, "0")
+}
+
+record(ai, "D1-I2:WFGNode-NumberOfPushedDataBlocks") {
+   field(DESC, "Number Of Pushed Data Blocks")
+    field(DTYP, "asynInt32")
+    field(SCAN, "I/O Intr")
+    field(INP, "@asyn(B-0, 0)WFGNode-NumberOfPushedDataBlocks")
+}
+
+record(ao, "D1-I2:WFGNode-RefFrequency") {
+    field(DESC, "Reference frequency")
+    field(DTYP, "asynFloat64")
+    field(SCAN, "Passive")
+    field(EGU, "Hz")
+    field(OUT, "@asyn(B-0, 0)WFGNode-RefFrequency")
+}
+
+record(ai, "D1-I2:WFGNode-RefFrequency_RBV") {
+    field(DESC, "Reference frequency ReadBack")
+    field(DTYP, "asynFloat64")
+    field(SCAN, "I/O Intr")
+    field(EGU, "Hz")
+    field(INP, "@asyn(B-0, 0)WFGNode-RefFrequency_RBV")
+}
+
+record(ao, "D1-I2:WFGNode-Phase") {
+    field(DESC, "Phase")
+    field(DTYP, "asynFloat64")
+    field(SCAN, "Passive")
+    field(EGU, "-")
+    field(OUT, "@asyn(B-0, 0)WFGNode-Phase")
+}
+
+record(ai, "D1-I2:WFGNode-Phase_RBV") {
+    field(DESC, "Phase ReadBack")
+    field(DTYP, "asynFloat64")
+    field(SCAN, "I/O Intr")
+    field(EGU, "-")
+    field(INP, "@asyn(B-0, 0)WFGNode-Phase_RBV")
+}
+
+record(ao, "D1-I2:WFGNode-UpdateRate") {
+    field(DESC, "UpdateRate")
+    field(DTYP, "asynFloat64")
+    field(SCAN, "Passive")
+    field(EGU, "-")
+    field(OUT, "@asyn(B-0, 0)WFGNode-UpdateRate")
+}
+
+record(ai, "D1-I2:WFGNode-UpdateRate_RBV") {
+    field(DESC, "UpdateRate ReadBack")
+    field(DTYP, "asynFloat64")
+    field(SCAN, "I/O Intr")
+    field(EGU, "-")
+    field(INP, "@asyn(B-0, 0)WFGNode-UpdateRate_RBV")
+}
+
+record(ao, "D1-I2:WFGNode-DutyCycle") {
+    field(DESC, "Signal Duty Cycle")
+    field(DTYP, "asynFloat64")
+    field(SCAN, "Passive")
+    field(EGU, "-")
+    field(OUT, "@asyn(B-0, 0)WFGNode-DutyCycle")
+}
+
+record(ai, "D1-I2:WFGNode-DutyCycle_RBV") {
+    field(DESC, "Signal Duty Cycle ReadBack")
+    field(DTYP, "asynFloat64")
+    field(SCAN, "I/O Intr")
+    field(EGU, "-")
+    field(INP, "@asyn(B-0, 0)WFGNode-DutyCycle_RBV")
+}
+
+record(ao, "D1-I2:WFGNode-Gain") {
+    field(DESC, "Gain of the Channel")
+    field(DTYP, "asynFloat64")
+    field(SCAN, "Passive")
+    field(OUT, "@asyn(B-0, 0)WFGNode-Gain")
+}
+
+record(ai, "D1-I2:WFGNode-Gain_RBV") {
+    field(DESC, "Gain of the Channel")
+    field(DTYP, "asynFloat64")
+    field(SCAN, "I/O Intr")
+    field(INP, "@asyn(B-0, 0)WFGNode-Gain_RBV")
+}
+
+record(ao, "D1-I2:WFGNode-Offset") {
+    field(DESC, "Offset")
+    field(DTYP, "asynFloat64")
+    field(SCAN, "Passive")
+    field(OUT, "@asyn(B-0, 0)WFGNode-Offset")
+}
+
+record(ai, "D1-I2:WFGNode-Offset_RBV") {
+    field(DESC, "Offset ReadBack")
+    field(DTYP, "asynFloat64")
+    field(SCAN, "I/O Intr")
+    field(INP, "@asyn(B-0, 0)WFGNode-Offset_RBV")
+}
+
+record(ao, "D1-I2:WFGNode-BandWidth") {
+    field(DESC, "Bandwidth")
+    field(DTYP, "asynFloat64")
+    field(SCAN, "Passive")
+    field(OUT, "@asyn(B-0, 0)WFGNode-BandWidth")
+}
+
+record(ai, "D1-I2:WFGNode-Bandwidth_RBV") {
+    field(DESC, "Bandwidth ReadBack")
+    field(DTYP, "asynFloat64")
+    field(SCAN, "I/O Intr")
+    field(INP, "@asyn(B-0, 0)WFGNode-BandWidth_RBV")
+}
+
+record(ao, "D1-I2:WFGNode-Resolution") {
+    field(DESC, "Number of Bits per Sample")
+    field(DTYP, "asynFloat64")
+    field(SCAN, "Passive")
+    field(OUT, "@asyn(B-0, 0)WFGNode-Resolution")
+}
+
+record(ai, "D1-I2:WFGNode-Resolution_RBV") {
+    field(DESC, "Number of Bits per Sample ReadBack")
+    field(DTYP, "asynFloat64")
+    field(SCAN, "I/O Intr")
+    field(INP, "@asyn(B-0, 0)WFGNode-Resolution_RBV")
+}
+
+record(bo, "D1-I2:WFGNode-Impedance") {
+    field(DESC, "Impedance: 50 ohm or Inf")
+    field(DTYP, "asynInt32")
+    field(SCAN, "Passive")
+    field(OUT, "@asyn(B-0, 0)WFGNode-Impedance")
+    field(ZNAM, "50ohm")
+    field(ONAM, "Inf")
+}
+
+record(bi, "D1-I2:WFGNode-Impedance_RBV") {
+    field(DESC, "Impedance: 50 ohm or Inf, ReadBack")
+    field(DTYP, "asynInt32")
+    field(SCAN, "I/O Intr")
+    field(INP, "@asyn(B-0, 0)WFGNode-Impedance_RBV")
+    field(ZNAM, "50ohm")
+    field(ONAM, "Inf")
+}
+
+record(bo, "D1-I2:WFGNode-Coupling") {
+    field(DESC, "Coupling: AC or DC")
+    field(DTYP, "asynInt32")
+    field(SCAN, "Passive")
+    field(OUT, "@asyn(B-0, 0)WFGNode-Coupling")
+    field(ZNAM, "AC")
+    field(ONAM, "DC")
+}
+
+record(bi, "D1-I2:WFGNode-Coupling_RBV") {
+    field(DESC, "Coupling: AC or DC ReadBack")
+    field(DTYP, "asynInt32")
+    field(SCAN, "I/O Intr")
+    field(INP, "@asyn(B-0, 0)WFGNode-Coupling_RBV")
+    field(ZNAM, "AC")
+    field(ONAM, "DC")
+}
+
+record(bo, "D1-I2:WFGNode-SignalRefType") {
+    field(DESC, "Differential or Single Ended")
+    field(DTYP, "asynInt32")
+    field(SCAN, "Passive")
+    field(OUT, "@asyn(B-0, 0)WFGNode-SignalRefType")
+    field(ZNAM, "SingleEnded")
+    field(ONAM, "Differential")
+}
+
+record(bi, "D1-I2:WFGNode-SignalRefType_RBV") {
+    field(DESC, "Differential or Single Ended")
+    field(DTYP, "asynInt32")
+    field(SCAN, "I/O Intr")
+    field(INP, "@asyn(B-0, 0)WFGNode-SignalRefType_RBV")
+    field(ZNAM, "SingleEnded")
+    field(ONAM, "Differential")
+}
+
+record(bo, "D1-I2:WFGNode-Ground") {
+    field(DESC, "Ground State")
+    field(DTYP, "asynInt32")
+    field(SCAN, "Passive")
+    field(OUT, "@asyn(B-0, 0)WFGNode-Ground")
+    field(ZNAM, "Off")
+    field(ONAM, "On")
+}
+
+record(bi, "D1-I2:WFGNode-Ground_RBV") {
+    field(DESC, "Ground State ReadBack")
+    field(DTYP, "asynInt32")
+    field(SCAN, "I/O Intr")
+    field(INP, "@asyn(B-0, 0)WFGNode-Ground_RBV")
+    field(ZNAM, "Off")
+    field(ONAM, "On")
+}
+
+
+record(mbbo, "HWCF:B-0-WFGNode-StateMachine-setState") {
+    field(DESC, "Set local state")
+    field(DTYP, "asynInt32")
+    field(SCAN, "Passive")
+    field(OUT, "@asyn(B-0, 0)WFGNode-StateMachine-setState")
+
+    field(FRVL, 4)
+    field(FRST, "ON/OFF")
+
+
+    field(SVVL, 7)
+    field(SVST, "RUNNING")
+
+    
+}
+
+record(mbbi, "HWCF:B-0-WFGNode-StateMachine-getState") {
+    field(DESC, "Get local state")
+    field(DTYP, "asynInt32")
+    field(SCAN, "I/O Intr")
+    field(INP, "@asyn(B-0, 0)WFGNode-StateMachine-getState")
+    field(ZRVL, 0)
+    field(ZRST, "UNKNOWN")
+    field(ONVL, 1)
+    field(ONST, "OFF")
+    field(TWVL, 2)
+    field(TWST, "SWITCHING_OFF")
+    field(THVL, 3)
+    field(THST, "INITIALIZING")
+    field(FRVL, 4)
+    field(FRST, "ON")
+    field(FVVL, 5)
+    field(FVST, "STOPPING")
+    field(SXVL, 6)
+    field(SXST, "STARTING")
+    field(SVVL, 7)
+    field(SVST, "RUNNING")
+    field(EIVL, 8)
+    field(EIST, "FAULT")
+}
+
+record(mbbi, "HWCF:B-0-WFGNode-StateMachine-getGlobalState") {
+    field(DESC, "Get global state")
+    field(DTYP, "asynInt32")
+    field(SCAN, "I/O Intr")
+    field(INP, "@asyn(B-0, 0)WFGNode-StateMachine-getGlobalState")
+    field(ZRVL, 0)
+    field(ZRST, "UNKNOWN")
+    field(ONVL, 1)
+    field(ONST, "OFF")
+    field(TWVL, 2)
+    field(TWST, "SWITCHING_OFF")
+    field(THVL, 3)
+    field(THST, "INITIALIZING")
+    field(FRVL, 4)
+    field(FRST, "ON")
+    field(FVVL, 5)
+    field(FVST, "STOPPING")
+    field(SXVL, 6)
+    field(SXST, "STARTING")
+    field(SVVL, 7)
+    field(SVST, "RUNNING")
+    field(EIVL, 8)
+    field(EIST, "FAULT")
+}
+
+
+#dan PVs
+
+
+#common DAN-EPICS PVs
+
+record(mbbi, "DAN-getGlobalState") {
+    field(DESC, "Get global state")
+    field(DTYP, "asynInt32")
+    field(SCAN, "Passive")
+    field(INP, "@asyn(DAN-0, 0)StateMachine-getGlobalState")
+    field(ZRVL, 0)
+    field(ZRST, "UNKNOWN")
+    field(ONVL, 1)
+    field(ONST, "OFF")
+    field(TWVL, 2)
+    field(TWST, "SWITCHING_OFF")
+    field(THVL, 3)
+    field(THST, "INITIALIZING")
+    field(FRVL, 4)
+    field(FRST, "ON")
+    field(FVVL, 5)
+    field(FVST, "STOPPING")
+    field(SXVL, 6)
+    field(SXST, "STARTING")
+    field(SVVL, 7)
+    field(SVST, "RUNNING")
+    field(EIVL, 8)
+    field(EIST, "FAULT")
+    field(PINI, 1)
+}
+
+record(mbbi, "DAN-0-DANCP-getState") {
+    field(DESC, "Get local state")
+    field(DTYP, "asynInt32")
+    field(SCAN, "I/O Intr")
+    field(INP, "@asyn(DAN-0, 0)DANCP-StateMachine-getState")
+    field(ZRVL, 0)
+    field(ZRST, "UNKNOWN")
+    field(ONVL, 1)
+    field(ONST, "OFF")
+    field(TWVL, 2)
+    field(TWST, "SWITCHING_OFF")
+    field(THVL, 3)
+    field(THST, "INITIALIZING")
+    field(FRVL, 4)
+    field(FRST, "ON")
+    field(FVVL, 5)
+    field(FVST, "STOPPING")
+    field(SXVL, 6)
+    field(SXST, "STARTING")
+    field(SVVL, 7)
+    field(SVST, "RUNNING")
+    field(EIVL, 8)
+    field(EIST, "FAULT")
+    field(PINI, 1)
+}
+
+record(mbbo, "DAN-0-DANCPsetState") {
+    field(DESC, "Set local state")
+    field(DTYP, "asynInt32")
+    field(SCAN, "Passive")
+    field(OUT, "@asyn(DAN-0, 0)DANCP-StateMachine-setState")
+    field(ONVL, 1)
+    field(ONST, "OFF")
+    field(FRVL, 4)
+    field(FRST, "ON")
+    field(SVVL, 7)
+    field(SVST, "RUNNING")
+    field(PINI, 1)
+}
+
+
+#DataAcquisition Node 
+
+#include "nds3_StateMachine.template"
+
+#record(mbbi, "D1-I2-HWCF:DataAcquisitionStateMachine-getGlobalState") {
+#    field(INP, "@asyn(B-0, 0)DataAcquisitionNode-StateMachine-getGlobalState")
+#}
+
+#record(mbbi, "D1-I2-HWCF:DataAcquisitionStateMachine-getState") {
+#    field(INP, "@asyn(B-0, 0)DataAcquisitionNode-StateMachine-getState")
+#}
+
+#record(mbbo, "D1-I2-HWCF:DataAcquisitionStateMachine-setState") {
+#    field(OUT, "@asyn(B-0, 0)DataAcquisitionNode-StateMachine-setState")
+#}
+
+# Rest of PVs
+
+
+record (waveform, "buffer")
+{
+	field (DESC, "Test data buffer")
+	field (DTYP, "asynInt16ArrayOut")
+	field (SCAN, "I/O Intr")
+	field (FTVL, "SHORT")
+	field (NELM, "800000")
+	field (INP, "@asyn(DAN-0,0)buffer")
+}
+
+
+record(waveform, "D1-I2-HWCF:DataAcquisition-Data") {
+    field(DESC, "Acquired data")
+    field(DTYP, "asynInt16ArrayIn")
+    field(FTVL, "SHORT")
+    field(NELM, "800000")
+    field(SCAN, "I/O Intr")
+    field(INP, "@asyn(B-0, 0)DataAcquisitionNode-Data")
+}
+
+record(ao, "D1-I2-HWCF:DataAcquisition-Decimation") {
+    field(DESC, "Decimation")
+    field(DTYP, "asynInt32")
+    field(SCAN, "Passive")
+    field(OUT, "@asyn(B-0, 0)DataAcquisitionNode-Decimation")
+}
+
+record(ao, "D1-I2-HWCF:DataAcquisition-DecimationType") {
+    field(DESC, "Decimation")
+    field(DTYP, "asynInt32")
+    field(SCAN, "Passive")
+    field(OUT, "@asyn(B-0, 0)DataAcquisitionNode-DecimationType")
+}
+
+record(ao, "D1-I2-HWCF:DataAcquisition-Gain") {
+    field(DESC, "Gain of the Channel")
+    field(DTYP, "asynFloat64")
+    field(SCAN, "Passive")
+    field(OUT, "@asyn(B-0, 0)DataAcquisitionNode-Gain")
+}
+
+record(ai, "D1-I2-HWCF:DataAcquisition-Gain_RBV") {
+    field(DESC, "Gain of the Channel")
+    field(DTYP, "asynFloat64")
+    field(SCAN, "I/O Intr")
+    field(INP, "@asyn(B-0, 0)DataAcquisitionNode-Gain_RBV")
+}
+
+record(ao, "D1-I2-HWCF:DataAcquisition-Offset") {
+    field(DESC, "Offset")
+    field(DTYP, "asynFloat64")
+    field(SCAN, "Passive")
+    field(OUT, "@asyn(B-0, 0)DataAcquisitionNode-Offset")
+}
+
+record(ai, "D1-I2-HWCF:DataAcquisition-Offset_RBV") {
+    field(DESC, "Offset ReadBack")
+    field(DTYP, "asynFloat64")
+    field(SCAN, "I/O Intr")
+    field(INP, "@asyn(B-0, 0)DataAcquisitionNode-Offset_RBV")
+}
+
+record(ao, "D1-I2-HWCF:DataAcquisition-BandWidth") {
+    field(DESC, "BandWidth")
+    field(DTYP, "asynFloat64")
+    field(SCAN, "Passive")
+    field(OUT, "@asyn(B-0, 0)DataAcquisitionNode-BandWidth")
+}
+
+record(ai, "D1-I2-HWCF:DataAcquisition-BandWidth_RBV") {
+    field(DESC, "BandWidth ReadBack")
+    field(DTYP, "asynFloat64")
+    field(SCAN, "I/O Intr")
+    field(INP, "@asyn(B-0, 0)DataAcquisitionNode-BandWidth_RBV")
+}
+
+record(ao, "D1-I2-HWCF:DataAcquisition-Resolution") {
+    field(DESC, "Number of Bits per Sample")
+    field(DTYP, "asynFloat64")
+    field(SCAN, "Passive")
+    field(OUT, "@asyn(B-0, 0)DataAcquisitionNode-Resolution")
+}
+
+record(ai, "D1-I2-HWCF:DataAcquisition-Resolution_RBV") {
+    field(DESC, "Number of Bits per Sample ReadBack")
+    field(DTYP, "asynFloat64")
+    field(SCAN, "I/O Intr")
+    field(INP, "@asyn(B-0, 0)DataAcquisitionNode-Resolution_RBV")
+}
+
+record(ao, "D1-I2-HWCF:DataAcquisition-Impedance") {
+    field(DESC, "Impedance")
+    field(DTYP, "asynFloat64")
+    field(SCAN, "Passive")
+    field(OUT, "@asyn(B-0, 0)DataAcquisitionNode-Impedance")
+}
+
+record(ai, "D1-I2-HWCF:DataAcquisition-Impedance_RBV") {
+    field(DESC, "Impedance ReadBack")
+    field(DTYP, "asynFloat64")
+    field(SCAN, "I/O Intr")
+    field(INP, "@asyn(B-0, 0)DataAcquisitionNode-Impedance_RBV")
+}
+
+record(bo, "D1-I2-HWCF:DataAcquisition-Coupling") {
+    field(DESC, "Coupling: AC or DC")
+    field(DTYP, "asynInt32")
+    field(SCAN, "Passive")
+    field(OUT, "@asyn(B-0, 0)DataAcquisitionNode-Coupling")
+    field(ZNAM, "AC")
+    field(ONAM, "DC")
+}
+
+record(bi, "D1-I2-HWCF:DataAcquisition-Coupling_RBV") {
+    field(DESC, "Coupling: AC or DC ReadBack")
+    field(DTYP, "asynInt32")
+    field(SCAN, "I/O Intr")
+    field(INP, "@asyn(B-0, 0)DataAcquisitionNode-Coupling_RBV")
+    field(ZNAM, "AC")
+    field(ONAM, "DC")
+}
+
+record(bo, "D1-I2-HWCF:DataAcquisition-SignalRefType") {
+    field(DESC, "Differential or Single Ended")
+    field(DTYP, "asynInt32")
+    field(SCAN, "Passive")
+    field(OUT, "@asyn(B-0, 0)DataAcquisitionNode-SignalRefType")
+    field(ZNAM, "SingleEnded")
+    field(ONAM, "Differential")
+}
+
+record(bi, "D1-I2-HWCF:DataAcquisition-SignalRefType_RBV") {
+    field(DESC, "Differential or Single Ended")
+    field(DTYP, "asynInt32")
+    field(SCAN, "I/O Intr")
+    field(INP, "@asyn(B-0, 0)DataAcquisitionNode-SignalRefType_RBV")
+    field(ZNAM, "SingleEnded")
+    field(ONAM, "Differential")
+}
+
+record(bo, "D1-I2-HWCF:DataAcquisition-Ground") {
+    field(DESC, "Ground State")
+    field(DTYP, "asynInt32")
+    field(SCAN, "Passive")
+    field(OUT, "@asyn(B-0, 0)DataAcquisitionNode-Ground")
+    field(ZNAM, "Off")
+    field(ONAM, "On")
+}
+
+record(bi, "D1-I2-HWCF:DataAcquisition-Ground_RBV") {
+    field(DESC, "Ground State ReadBack")
+    field(DTYP, "asynInt32")
+    field(SCAN, "I/O Intr")
+    field(INP, "@asyn(B-0, 0)DataAcquisitionNode-Ground_RBV")
+    field(ZNAM, "Off")
+    field(ONAM, "On")
+}
+
+record(ai, "D1-I2-HWCF:DataAcquisition-NoB") {
+    field(DESC, "Number Of Pushed Data Blocks")
+    field(DTYP, "asynInt32")
+    field(SCAN, "I/O Intr")
+    field(INP, "@asyn(B-0, 0)DataAcquisitionNode-NumberOfPushedDataBlocks")
+}
+
+record(ai, "D1-I2-HWCF:DataAcquisition-DMABufferSize") {
+    field(DESC, "Number Of Pushed Data Blocks")
+    field(DTYP, "asynInt32")
+    field(SCAN, "I/O Intr")
+    field(INP, "@asyn(B-0, 0)DataAcquisitionNode-DMABufferSize")
+}
+
+record(ao, "D1-I2-HWCF:DataAcquisition-DMAEnable") {
+    field(DESC, "Number Of Pushed Data Blocks")
+    field(DTYP, "asynInt32")
+    field(SCAN, "Passive")
+    field(OUT, "@asyn(B-0, 0)DataAcquisitionNode-DMAEnable")
+}
+
+record(ai, "D1-I2-HWCF:DataAcquisition-DMAEnable_RBV") {
+    field(DESC, "Number Of Pushed Data Blocks")
+    field(DTYP, "asynInt32")
+    field(SCAN, "I/O Intr")
+    field(INP, "@asyn(B-0, 0)DataAcquisitionNode-DMAEnable_RBV")
+}
+
+record(ai, "D1-I2-HWCF:DataAcquisition-DMANumChannels") {
+    field(DESC, "Number Of Pushed Data Blocks")
+    field(DTYP, "asynInt32")
+    field(SCAN, "I/O Intr")
+    field(INP, "@asyn(B-0, 0)DataAcquisitionNode-DMANumChannels")
+}
+
+record(ai, "D1-I2-HWCF:DataAcquisition-DMAFrameType") {
+    field(DESC, "Number Of Pushed Data Blocks")
+    field(DTYP, "asynInt32")
+    field(SCAN, "I/O Intr")
+    field(INP, "@asyn(B-0, 0)DataAcquisitionNode-DMAFrameType")
+}
+
+record(ai, "D1-I2-HWCF:DataAcquisition-DMASampleSize") {
+    field(DESC, "Number Of Pushed Data Blocks")
+    field(DTYP, "asynInt32")
+    field(SCAN, "I/O Intr")
+    field(INP, "@asyn(B-0, 0)DataAcquisitionNode-DMASampleSize")
+}
+
+record(ao, "D1-I2-HWCF:DataAcquisition-SamplingRate") {
+    field(DESC, "Number of Bits per Sample")
+    field(DTYP, "asynFloat64")
+    field(SCAN, "Passive")
+    field(OUT, "@asyn(B-0, 0)DataAcquisitionNode-SamplingRate")
+}
+
+record(ai, "D1-I2-HWCF:DataAcquisition-SamplingRate_RBV") {
+    field(DESC, "Number of Bits per Sample ReadBack")
+    field(DTYP, "asynFloat64")
+    field(SCAN, "I/O Intr")
+    field(INP, "@asyn(B-0, 0)DataAcquisitionNode-SamplingRate_RBV")
+}
+
+record(mbbi, "D1-I2-HWCF:DataAcquisition-getGlobalState") {
+    field(DESC, "Get global state")
+    field(DTYP, "asynInt32")
+    field(SCAN, "Passive")
+    field(INP, "@asyn(B-0, 0)DataAcquisitionNode-StateMachine-getGlobalState")
+     field(ZRVL, 0)
+    field(ZRST, "UNKNOWN")
+    field(ONVL, 1)
+    field(ONST, "OFF")
+    field(TWVL, 2)
+    field(TWST, "SWITCHING_OFF")
+    field(THVL, 3)
+    field(THST, "INITIALIZING")
+    field(FRVL, 4)
+    field(FRST, "ON")
+    field(FVVL, 5)
+    field(FVST, "STOPPING")
+    field(SXVL, 6)
+    field(SXST, "STARTING")
+    field(SVVL, 7)
+    field(SVST, "RUNNING")
+    field(EIVL, 8)
+    field(EIST, "FAULT")
+    field(PINI, 1)
+}
+
+record(mbbi, "D1-I2-HWCF:DataAcquisition-getState") {
+    field(DESC, "Get local state")
+    field(DTYP, "asynInt32")
+    field(SCAN, "I/O Intr")
+    field(INP, "@asyn(B-0, 0)DataAcquisitionNode-StateMachine-getState")
+     field(ZRVL, 0)
+    field(ZRST, "UNKNOWN")
+    field(ONVL, 1)
+    field(ONST, "OFF")
+    field(TWVL, 2)
+    field(TWST, "SWITCHING_OFF")
+    field(THVL, 3)
+    field(THST, "INITIALIZING")
+    field(FRVL, 4)
+    field(FRST, "ON")
+    field(FVVL, 5)
+    field(FVST, "STOPPING")
+    field(SXVL, 6)
+    field(SXST, "STARTING")
+    field(SVVL, 7)
+    field(SVST, "RUNNING")
+    field(EIVL, 8)
+    field(EIST, "FAULT")
+    field(PINI, 1)
+}
+
+record(mbbo, "D1-I2-HWCF:DataAcquisition-setState") {
+     field(DESC, "Set local state")
+    field(DTYP, "asynInt32")
+    field(SCAN, "Passive")
+    field(OUT, "@asyn(B-0, 0)DataAcquisitionNode-StateMachine-setState")
+     field(ONVL, 1)
+    field(ONST, "OFF")
+    field(FRVL, 4)
+    field(FRST, "ON")
+    field(SVVL, 7)
+    field(SVST, "RUNNING")
+    field(PINI, 1)
+}
+
+#Rest of PVs
+
+record(mbbi, "DAN-Status") {
+    field(DESC, "DAN status")
+    field(DTYP, "asynInt32")
+    field(SCAN, "I/O Intr")
+    field(INP, "@asyn(DAN-0, 0)DANCP-Status")
+    field(ZRVL, 0)
+    field(ZRST, "SUCCESS")
+    field(ONVL, 1)
+    field(ONST, "UNKNOWN")
+    field(TWVL, 2)
+    field(TWST, "ERROR_XML")
+    field(THVL, 3)
+    field(THST, "ERROR_DAN_INIT")
+    field(FRVL, 4)
+    field(FRST, "ERROR_DAN_CLOSE")
+    field(FVVL, 5)
+    field(FVST, "ERROR_ICPROGRAM_UNLOAD")
+    field(SXVL, 6)
+    field(SXST, "ERROR_TCN_INIT")
+    field(SVVL, 7)
+    field(SVST, "ERROR_TCN_CLOSE")
+    field(EIVL, 8)
+    field(EIST, "ERROR_DATA_INIT")
+    field(NIVL, 9)
+    field(NIST, "ERROR_DATA_RELEASE")
+    field(TEVL, 10)
+    field(TEST, "ERROR_PUBLISH_SOURCE")
+    field(ELVL, 11)
+    field(ELST, "ERROR_UNPUBLISH_SOURCE")
+    field(TVVL, 12)
+    field(TVST, "ERROR_OPEN_STREAM")
+    field(TTVL, 13)
+    field(TTST, "ERROR_CLOSE_STREAM")
+    field(FTVL, 14)
+    field(FTST, "ERROR_PUT_DATABLOCK")
+    field(FFVL, 15)
+    field(FFST, "ERROR_UNKNOWN")
+    field(PINI, "YES")
+}
+
+record(mbbi, "DAN-StatusStream") {
+    field(DESC, "DAN Stream status")
+    field(DTYP, "asynInt32")
+    field(SCAN, "I/O Intr")
+    field(INP, "@asyn(DAN-0, 0)DANCP-StatusStream")
+    field(ZRVL, 0)
+    field(ZRST, "SUCCESS_BLOCK")
+    field(ONVL, 1)
+    field(ONST, "UNKNOWN")
+    field(TWVL, 2)
+    field(TWST, "CLOSED")
+    field(THVL, 3)
+    field(THST, "IDLE")
+    field(FRVL, 4)
+    field(FRST, "ERROR_OFFSET_OUT_RANGE")
+    field(FVVL, 5)
+    field(FVST, "ERROR_NOT_OPEN_STREAM")
+    field(SXVL, 6)
+    field(SXST, "ERROR_OVERFLOW_ALL")
+    field(SVVL, 7)
+    field(SVST, "ERROR_OVERFLOW")
+    field(EIVL, 7)
+    field(EIST, "ERROR_UNKNOWN")
+    field(PINI, "YES")
+}
+
+record(longout, "DAN-BlockNumberOfSamples") {
+    field(DESC, "Set the DAN block size")
+    field(DTYP, "asynInt32")
+    field(SCAN, "Passive")
+    field(OUT, "@asyn(DAN-0, 0)DANCP-BlockNumberOfSamples")
+}
+
+record(longin, "DAN-BlockNumberOfSamples_RBV") {
+    field(DESC, "Readback value of DAN block size")
+    field(DTYP, "asynInt32")
+    field(SCAN, "I/O Intr")
+    field(INP, "@asyn(DAN-0, 0)DANCP-BlockNumberOfSamples_RBV")
+    field(PINI, "YES")
+}
+
+record(longout, "DAN-BufferSize") {
+    field(DESC, "Set the DAN buffer size")
+    field(DTYP, "asynInt32")
+    field(SCAN, "Passive")
+    field(OUT, "@asyn(DAN-0, 0)DANCP-BufferSize")
+}
+
+record(longin, "DAN-BufferSize_RBV") {
+    field(DESC, "Readback value of DAN buffer size")
+    field(DTYP, "asynInt32")
+    field(SCAN, "I/O Intr")
+    field(INP, "@asyn(DAN-0, 0)DANCP-BufferSize_RBV")
+    field(PINI, "YES")
+}
+
+record(waveform, "DAN-ICProgramName") {
+    field(DESC, "Set the name of DAN ICProgram")
+    field(DTYP, "asynInt8ArrayOut")
+    field(FTVL, "CHAR")
+    field(NELM, 256)
+    field(SCAN, "Passive")
+    field(INP, "@asyn(DAN-0, 0)DANCP-ICProgramName")
+}
+
+record(waveform, "DAN-ICProgramName_RBV") {
+    field(DESC, "Readback value of DAN ICProgram name")
+    field(DTYP, "asynInt8ArrayIn")
+    field(FTVL, "CHAR")
+    field(NELM, 256)
+    field(SCAN, "I/O Intr")
+    field(INP, "@asyn(DAN-0, 0)DANCP-ICProgramName_RBV")
+    field(PINI, "YES")
+}
+
+record(longin, "DAN-NumberOfChannels") {
+    field(DESC, "Number of channels in DAN streamer")
+    field(DTYP, "asynInt32")
+    field(SCAN, "I/O Intr")
+    field(INP, "@asyn(DAN-0, 0)DANCP-NumberOfChannels")
+    field(PINI, "YES")
+}
+
+record(waveform, "DAN-PathXML") {
+    field(DESC, "Set the path of DAN XML file")
+    field(DTYP, "asynInt8ArrayOut")
+    field(FTVL, "CHAR")
+    field(NELM, 256)
+    field(SCAN, "Passive")
+    field(INP, "@asyn(DAN-0, 0)DANCP-PathXML")
+}
+
+record(waveform, "DAN-PathXML_RBV") {
+    field(DESC, "Readback value of DAN XML file")
+    field(DTYP, "asynInt8ArrayIn")
+    field(FTVL, "CHAR")
+    field(NELM, 256)
+    field(SCAN, "I/O Intr")
+    field(INP, "@asyn(DAN-0, 0)DANCP-PathXML_RBV")
+    field(PINI, "YES")
+}
+
+record(longout, "DAN-SampleSize") {
+    field(DESC, "Set the sample size of DAN publisher")
+    field(DTYP, "asynInt32")
+    field(SCAN, "Passive")
+    field(OUT, "@asyn(DAN-0, 0)DANCP-SampleSize")
+}
+
+record(longin, "DAN-SampleSize_RBV") {
+    field(DESC, "Readback value of DAN sample size")
+    field(DTYP, "asynInt32")
+    field(SCAN, "I/O Intr")
+    field(INP, "@asyn(DAN-0, 0)DANCP-SampleSize_RBV")
+    field(PINI, "YES")
+}
+
+record(longout, "DAN-SamplingRate") {
+    field(DESC, "Set the DAN sampling rate")
+    field(DTYP, "asynInt32")
+    field(SCAN, "Passive")
+    field(OUT, "@asyn(DAN-0, 0)DANCP-SamplingRate")
+}
+
+record(longin, "DAN-SamplingRate_RBV") {
+    field(DESC, "Readback value of DAN sampling rate")
+    field(DTYP, "asynInt32")
+    field(SCAN, "I/O Intr")
+    field(INP, "@asyn(DAN-0, 0)DANCP-SamplingRate_RBV")
+    field(PINI, "YES")
+}
+
+record(waveform, "DAN-SourceName") {
+    field(DESC, "Set the name of DAN source")
+    field(DTYP, "asynInt8ArrayOut")
+    field(FTVL, "CHAR")
+    field(NELM, 256)
+    field(SCAN, "Passive")
+    field(INP, "@asyn(DAN-0, 0)DANCP-SourceName")
+}
+
+record(waveform, "DAN-SourceName_RBV") {
+    field(DESC, "Readback value of DAN source name")
+    field(DTYP, "asynInt8ArrayIn")
+    field(FTVL, "CHAR")
+    field(NELM, 256)
+    field(SCAN, "I/O Intr")
+    field(INP, "@asyn(DAN-0, 0)DANCP-SourceName_RBV")
+    field(PINI, "YES")
+}
+
+
+#additional calculation
+
+record (calc,"D1-I2:RejectionRate")
+{
+	field(DESC, "TotalCountRate")
+
+	field(INPA, "D1-I2:TotalCountRate")
+    field (INPB, "D1-I2:SinglePulsesCountRate")
+    field (CALC, "(100*(A-B)/A)")
+	field(SCAN, "1 second")
+}
+
+record (waveform, "PulsePeaksFIFO")
+{
+	field (DESC, "PulsePeaksFIFO")
+	field (DTYP, "asynFloat64ArrayIn")
+	field (SCAN, "1 second")
+	field (FTVL, "DOUBLE")
+	field (NELM, "10000")
+	field (INP, "@asyn(B-0,0)PulsePeaksFIFO")
+
+}
+
+record (waveform, "edges")
+{
+	field (DESC, "PulsePeaksFIFO")
+	field (DTYP, "asynFloat64ArrayIn")
+	field (SCAN, "1 second")
+	field (FTVL, "DOUBLE")
+	field (NELM, "10000")
+	field (INP, "@asyn(B-0,0)edges")
+}
+
+#test of histogram record 
+
+record(ao, "step") {
+    field(DESC, "Reference frequency")
+    field(DTYP, "asynInt32")
+    field(SCAN, "Passive")
+    field(OUT, "@asyn(B-0, 0)step")
+}
+
+record (ai, "maximum_amplitude")
+{
+	field (DESC, "maximum_amplitude")
+	field (DTYP, "asynFloat64")
+	field (SCAN, "1 second")
+	#field (FTVL, "DOUBLE")
+	field (INP, "@asyn(B-0,0)maximum_amplitude")
+}

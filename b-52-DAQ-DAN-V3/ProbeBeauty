@@ -1,0 +1,26 @@
+# Created by CSS Data Browser Version 4.2.4.20210121
+# 
+# Start Time : 2023-02-13T07:53:53.723Z
+# End Time   : 2023-02-13T07:54:02.169Z
+# Source     : Raw Archived Data
+# Format     : Decimal (6 digits)
+# 
+# Data is in TAB-delimited columns, should import into e.g. Excel
+
+# Channel: D1-I2:minticksperpulse
+# Archives:
+# 
+# Channel: Status
+# Archives:
+# 
+# Channel: D1-I2:WFGNode-Data
+# Archives:
+# 
+# Channel: csv
+# Archives:
+# 1) csv
+#    URL: import:csv://55.B2_Prototype
+#    Key: 1
+# 
+
+# Time	D1-I2:minticksperpulse Value	Severity	Status	Status Value	Severity	Status	D1-I2:WFGNode-Data Value	Severity	Status	csv Value	Severity	Status

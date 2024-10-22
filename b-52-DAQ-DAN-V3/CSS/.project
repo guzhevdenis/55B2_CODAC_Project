@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>CSS</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+	</buildSpec>
+	<natures>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>Demo</name>
+			<type>2</type>
+			<location>/opt/codac/opi/boy/resources/Demo</location>
+		</link>
+		<link>
+			<name>Design_Guide</name>
+			<type>2</type>
+			<location>/opt/codac/opi/boy/resources/Design_Guide</location>
+		</link>
+		<link>
+			<name>SymbolLibrary</name>
+			<type>2</type>
+			<location>/opt/codac/opi/boy/SymbolLibrary</location>
+		</link>
+		<link>
+			<name>opi</name>
+			<type>2</type>
+			<location>/opt/codac/opi</location>
+		</link>
+		<link>
+			<name>templates</name>
+			<type>2</type>
+			<location>/opt/codac/opi/boy/resources/templates</location>
+		</link>
+		<link>
+			<name>userFiles</name>
+			<type>2</type>
+			<location>/home/codac-dev/.css_user_files</location>
+		</link>
+	</linkedResources>
+</projectDescription>

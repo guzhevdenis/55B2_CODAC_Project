@@ -1,0 +1,3 @@
+This is an NDS-driver for NI FlexRIO 7976R device.
+It uses LabVIEW FPGA program for data acquisition
+and analysis. 

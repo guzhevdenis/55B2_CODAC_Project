@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+
+ <pvtable version="3.0" >
+     <nbMeasure >1</nbMeasure>
+
+     <pvlist >
+         <pv >
+             <selected >true</selected>
+
+             <name >D1-I2:WFGNode-Amplitude</name>
+</pv>
+
+         <pv >
+             <selected >true</selected>
+
+             <name >D1-I2:WFGNode-Amplitude_RBV</name>
+</pv>
+
+         <pv >
+             <selected >true</selected>
+
+             <name >D1-I2:WFGNode-Data</name>
+</pv>
+
+         <pv >
+             <selected >true</selected>
+
+             <name >D1-I2:WFGNode-DataAWG</name>
+</pv>
+
+         <pv >
+             <selected >true</selected>
+
+             <name >D1-I2:WFGNode-Decimation</name>
+</pv>
+
+         <pv >
+             <selected >true</selected>
+
+             <name >D1-I2:WFGNode-Frequency</name>
+</pv>
+
+         <pv >
+             <selected >true</selected>
+
+             <name >D1-I2:WFGNode-Frequency_RBV</name>
+</pv>
+
+         <pv >
+             <selected >true</selected>
+
+             <name >D1-I2:WFGNode-SignalType</name>
+</pv>
+
+         <pv >
+             <selected >true</selected>
+
+             <name >D1-I2:WFGNode-SignalTypeRBV</name>
+</pv>
+</pvlist>
+</pvtable>

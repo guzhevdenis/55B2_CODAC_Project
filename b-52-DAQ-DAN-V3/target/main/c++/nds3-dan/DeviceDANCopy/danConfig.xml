@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+  DAN Configuration
+  Root: danApi
+  CODAC-VERSION: 6.0.0
+  WARNING: This is an automatically generated file. PLEASE DO NOT MODIFY.
+-->
+
+<danApi>
+	<version>1.0</version>
+	<ICprogram name="nds-dan">
+		<source name="FlexRIO">
+		<advancedSource>
+			<queueSize>100</queueSize>
+			<maxBlockSize>1570</maxBlockSize>
+			<profMonitoring>1</profMonitoring>
+		</advancedSource>
+			<itemDanType>danInt16</itemDanType>
+			<maxTransferRate>1700000</maxTransferRate>
+			<deviceInfo>
+				<deviceName>DeviceNDSDANCP</deviceName>
+				<deviceVersion>v1.0</deviceVersion>
+				<operationalMode>0</operationalMode>
+				<manufactureCode>N1134342</manufactureCode>
+			</deviceInfo>
+			<channelsInfo>
+				<channel number="0" variable="SamplesCounter" label="CHANNEL0" status="ENABLE">
+					<calibration sourceUnit="Null" calibratedUnit="Volts" calibrationType="raw" />
+				</channel>
+			</channelsInfo>
+		</source>
+		<danStreamer name="DAN0">
+			<link>ALL</link>  
+			<internal>
+			<!--				<advanced>
+					<loopDelay>1000</loopDelay>
+					<profMonitoring>2</profMonitoring>
+					<maxnewDataTimeout>60</maxnewDataTimeout>
+				</advanced>
+				-->
+				<danInterface>eno1</danInterface>
+				<servers>
+					<policy >IF_FAIL_NEXT</policy>
+					<server>10.106.142.215:9999</server>
+				</servers>			
+			</internal>
+		</danStreamer>
+	</ICprogram>
+</danApi>

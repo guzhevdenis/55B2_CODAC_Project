@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $HeadURL$
+     $Id$ --><!-- Saved with sdd-sync-direct v0.15.1 by codac-dev@rf-da-55b2.codac.iter.org on 2022-03-16T07:46:07.882Z; CODAC v6.3.1 -->
+<IandCProject xmlns="http://www.iter.org/CODAC/PlantSystemIandC/2015" name="52.B2-DAQ-DAN"
+              version="1"
+              description="the test project with Data Generation, data archiving and data acquisition"
+              CODACVersion="6.3.1"
+              XMLFormatVersion="6.3.0"
+              createdAt="2022-03-16T06:50:00.332"
+              modifiedAt="2022-03-16T06:50:00.334"
+              savedAt="2022-03-16T07:46:07.882Z"
+              createdBy="codac-dev"
+              modifiedBy="codac-dev"
+              processedOn="rf-da-55b2.codac.iter.org">
+   <CBS>
+      <node name="D1"
+            description="Diagnostic measurement systems for machine protection, plasma control, and physics exploitation">
+         <ext>
+            <PBS>55</PBS>
+            <PBS>57</PBS>
+         </ext>
+         <node name="I2">
+            <ext>
+               <PSIC>D1-I2</PSIC>
+            </ext>
+         </node>
+      </node>
+   </CBS>
+   <plantSystems xmlns="http://www.iter.org/CODAC/PlantSystem/2014">
+      <plantSystem ID="55" name="Diagnostics" createdAt="2022-03-16T06:50:05.302"
+                   modifiedAt="2022-03-16T06:50:05.302">
+         <parts>
+            <part name="PCF001" TTT="PCF" createdAt="2022-03-16T06:50:47.008"
+                  modifiedAt="2022-03-16T06:50:47.008"/>
+         </parts>
+         <signals/>
+         <cubicles/>
+      </plantSystem>
+   </plantSystems>
+   <subsystems>
+      <subsystem name="D1" CBS="D1">
+         <plantSystemIandCs>
+            <plantSystemIandC ID="D1-I2" name="" createdAt="2022-03-16T06:50:18.687"
+                              modifiedAt="2022-03-16T06:50:18.687">
+               <plantControlSystem>
+                  <fastController index="0" isRealTime="false" name="PCF001" TTT="PCF"
+                                  createdAt="2022-03-16T06:50:47.008"
+                                  modifiedAt="2022-03-16T06:50:47.008">
+                     <networkConnection network="PON">
+                        <hostName>PCF001.codac.iter.org</hostName>
+                     </networkConnection>
+                     <networkConnection network="TCN">
+                        <hostName>PCF001-T1.codac.iter.org</hostName>
+                     </networkConnection>
+                  </fastController>
+               </plantControlSystem>
+               <variables>
+                  <variable name="D1-I2:WFGNode-Data"
+                            description="The input data to control system from WaveForm Generator"
+                            createdAt="2022-03-16T06:54:54.361"
+                            modifiedAt="2022-03-16T07:04:22.297">
+                     <direction>state</direction>
+                     <kind>continuous</kind>
+                     <external>true</external>
+                     <implementsFunction>D1-I2</implementsFunction>
+                     <importance>conventional</importance>
+                     <raisesAlarm>false</raisesAlarm>
+                     <archivingInfo enabled="false">
+                        <samplingFrequency>0.0</samplingFrequency>
+                     </archivingInfo>
+                     <storage>volatile</storage>
+                     <deployedOn>
+                        <component type="PCF">PCF001</component>
+                        <EPICSBasedUnit>
+                           <IOCName>iocD1-I2-PCF0CORE</IOCName>
+                           <recordName>D1-I2:WFGNode-Data</recordName>
+                        </EPICSBasedUnit>
+                     </deployedOn>
+                     <transmittedOn>PON</transmittedOn>
+                     <presentOnScreens>true</presentOnScreens>
+                     <displayIndex>0</displayIndex>
+                     <EPICSAttributes>
+                        <EPICSRecord name="D1-I2:WFGNode-Data" type="waveform" createdAt="2022-03-16T06:54:54.361"
+                                     modifiedAt="2022-03-16T07:04:22.297">
+                           <EPICSField name="DESC" value="The input data to control system from Wa"/>
+                           <EPICSField name="DTYP" value="asynFloat64ArrayIn"/>
+                           <EPICSField name="INP" value="@asyn(B-0, 0)WFGNode-Data"/>
+                           <EPICSField name="NELM" value="128"/>
+                           <EPICSField name="SCAN" value="I/O Intr"/>
+                           <EPICSField name="FTVL" value="DOUBLE"/>
+                        </EPICSRecord>
+                     </EPICSAttributes>
+                  </variable>
+                  <variable name="D1-I2:WFGNode-DataAWG" description="AWG Samples for signal generation"
+                            createdAt="2022-03-16T06:58:14.093"
+                            modifiedAt="2022-03-16T06:58:26.345">
+                     <direction>state</direction>
+                     <kind>continuous</kind>
+                     <external>true</external>
+                     <implementsFunction>D1-I2</implementsFunction>
+                     <importance>conventional</importance>
+                     <raisesAlarm>false</raisesAlarm>
+                     <archivingInfo enabled="false">
+                        <samplingFrequency>0.0</samplingFrequency>
+                     </archivingInfo>
+                     <storage>volatile</storage>
+                     <deployedOn>
+                        <component type="PCF">PCF001</component>
+                        <EPICSBasedUnit>
+                           <IOCName>iocD1-I2-PCF0CORE</IOCName>
+                           <recordName>D1-I2:WFGNode-DataAWG</recordName>
+                        </EPICSBasedUnit>
+                     </deployedOn>
+                     <transmittedOn>PON</transmittedOn>
+                     <presentOnScreens>true</presentOnScreens>
+                     <displayIndex>0</displayIndex>
+                     <EPICSAttributes>
+                        <EPICSRecord name="D1-I2:WFGNode-DataAWG" type="waveform"
+                                     createdAt="2022-03-16T06:58:14.093"
+                                     modifiedAt="2022-03-16T06:58:26.345">
+                           <EPICSField name="DESC" value="AWG Samples for signal generation"/>
+                           <EPICSField name="DTYP" value="asynFloat64ArrayOut"/>
+                           <EPICSField name="FTVL" value="DOUBLE"/>
+                           <EPICSField name="NELM" value="128"/>
+                           <EPICSField name="SCAN" value="Passive"/>
+                           <EPICSField name="INP" value="@asyn(B-0, 0)WFGNode-DataAWG"/>
+                        </EPICSRecord>
+                     </EPICSAttributes>
+                  </variable>
+                  <variable name="D1-I2:WFGNode-Decimation" description="Decimation"
+                            createdAt="2022-03-16T07:01:08.323"
+                            modifiedAt="2022-03-16T07:01:16.222">
+                     <direction>configuration</direction>
+                     <kind>continuous</kind>
+                     <external>true</external>
+                     <implementsFunction>D1-I2</implementsFunction>
+                     <importance>conventional</importance>
+                     <raisesAlarm>false</raisesAlarm>
+                     <archivingInfo enabled="false">
+                        <samplingFrequency>0.0</samplingFrequency>
+                     </archivingInfo>
+                     <storage>persistent</storage>
+                     <deployedOn>
+                        <component type="PCF">PCF001</component>
+                        <EPICSBasedUnit>
+                           <IOCName>iocD1-I2-PCF0CORE</IOCName>
+                           <recordName>D1-I2:WFGNode-Decimation</recordName>
+                        </EPICSBasedUnit>
+                     </deployedOn>
+                     <transmittedOn>PON</transmittedOn>
+                     <presentOnScreens>true</presentOnScreens>
+                     <displayIndex>0</displayIndex>
+                     <EPICSAttributes>
+                        <EPICSRecord name="D1-I2:WFGNode-Decimation" type="ao" createdAt="2022-03-16T07:01:08.323"
+                                     modifiedAt="2022-03-16T07:01:16.222">
+                           <EPICSField name="HOPR" value="10000"/>
+                           <EPICSField name="LOPR" value="0"/>
+                           <EPICSField name="DRVL" value="0"/>
+                           <EPICSField name="DRVH" value="100000"/>
+                           <EPICSField name="DESC" value="Decimation"/>
+                           <EPICSField name="DTYP" value="asynInt32"/>
+                           <EPICSField name="SCAN" value="Passive"/>
+                           <EPICSField name="OUT" value="@asyn(B-0, 0)WFGNode-Decimation"/>
+                        </EPICSRecord>
+                     </EPICSAttributes>
+                  </variable>
+                  <variable name="D1-I2:WFGNode-Frequency" description="Frequency"
+                            createdAt="2022-03-16T07:02:30.356"
+                            modifiedAt="2022-03-16T07:02:36.27">
+                     <direction>configuration</direction>
+                     <kind>continuous</kind>
+                     <external>true</external>
+                     <implementsFunction>D1-I2</implementsFunction>
+                     <importance>conventional</importance>
+                     <raisesAlarm>false</raisesAlarm>
+                     <archivingInfo enabled="false">
+                        <samplingFrequency>0.0</samplingFrequency>
+                     </archivingInfo>
+                     <storage>persistent</storage>
+                     <deployedOn>
+                        <component type="PCF">PCF001</component>
+                        <EPICSBasedUnit>
+                           <IOCName>iocD1-I2-PCF0CORE</IOCName>
+                           <recordName>D1-I2:WFGNode-Frequency</recordName>
+                        </EPICSBasedUnit>
+                     </deployedOn>
+                     <transmittedOn>PON</transmittedOn>
+                     <presentOnScreens>true</presentOnScreens>
+                     <displayIndex>0</displayIndex>
+                     <EPICSAttributes>
+                        <EPICSRecord name="D1-I2:WFGNode-Frequency" type="ao" createdAt="2022-03-16T07:02:30.356"
+                                     modifiedAt="2022-03-16T07:02:36.27">
+                           <EPICSField name="LOPR" value="0"/>
+                           <EPICSField name="HOPR" value="10000000"/>
+                           <EPICSField name="DRVH" value="100000"/>
+                           <EPICSField name="DRVL" value="0"/>
+                           <EPICSField name="DESC" value="Frequency"/>
+                           <EPICSField name="DTYP" value="asynFloat64"/>
+                           <EPICSField name="SCAN" value="Passive"/>
+                           <EPICSField name="OUT" value="@asyn(B-0, 0)WFGNode-Frequency"/>
+                        </EPICSRecord>
+                     </EPICSAttributes>
+                  </variable>
+                  <variable name="D1-I2:WFGNode-Frequency_RBV" description="Generation frequency ReadBack"
+                            createdAt="2022-03-16T07:04:46.686"
+                            modifiedAt="2022-03-16T07:05:07.196">
+                     <direction>state</direction>
+                     <kind>continuous</kind>
+                     <external>true</external>
+                     <implementsFunction>D1-I2</implementsFunction>
+                     <importance>conventional</importance>
+                     <raisesAlarm>false</raisesAlarm>
+                     <archivingInfo enabled="false">
+                        <samplingFrequency>0.0</samplingFrequency>
+                     </archivingInfo>
+                     <storage>volatile</storage>
+                     <deployedOn>
+                        <component type="PCF">PCF001</component>
+                        <EPICSBasedUnit>
+                           <IOCName>iocD1-I2-PCF0CORE</IOCName>
+                           <recordName>D1-I2:WFGNode-Frequency_RBV</recordName>
+                        </EPICSBasedUnit>
+                     </deployedOn>
+                     <transmittedOn>PON</transmittedOn>
+                     <presentOnScreens>true</presentOnScreens>
+                     <displayIndex>0</displayIndex>
+                     <EPICSAttributes>
+                        <EPICSRecord name="D1-I2:WFGNode-Frequency_RBV" type="ai"
+                                     createdAt="2022-03-16T07:04:46.686"
+                                     modifiedAt="2022-03-16T07:05:07.196">
+                           <EPICSField name="DESC" value="Generation frequency ReadBack"/>
+                           <EPICSField name="DTYP" value="asynFloat64"/>
+                           <EPICSField name="SCAN" value="I/O Intr"/>
+                           <EPICSField name="INP" value="@asyn(B-0, 0)WFGNode-Frequency_RBV"/>
+                        </EPICSRecord>
+                     </EPICSAttributes>
+                  </variable>
+                  <variable name="D1-I2:WFGNode-Amplitude" description="Amplitude"
+                            createdAt="2022-03-16T07:07:18.46"
+                            modifiedAt="2022-03-16T07:07:24.066">
+                     <direction>configuration</direction>
+                     <kind>continuous</kind>
+                     <external>true</external>
+                     <implementsFunction>D1-I2</implementsFunction>
+                     <importance>conventional</importance>
+                     <raisesAlarm>false</raisesAlarm>
+                     <archivingInfo enabled="false">
+                        <samplingFrequency>0.0</samplingFrequency>
+                     </archivingInfo>
+                     <storage>persistent</storage>
+                     <deployedOn>
+                        <component type="PCF">PCF001</component>
+                        <EPICSBasedUnit>
+                           <IOCName>iocD1-I2-PCF0CORE</IOCName>
+                           <recordName>D1-I2:WFGNode-Amplitude</recordName>
+                        </EPICSBasedUnit>
+                     </deployedOn>
+                     <transmittedOn>PON</transmittedOn>
+                     <presentOnScreens>true</presentOnScreens>
+                     <displayIndex>0</displayIndex>
+                     <EPICSAttributes>
+                        <EPICSRecord name="D1-I2:WFGNode-Amplitude" type="ao" createdAt="2022-03-16T07:07:18.46"
+                                     modifiedAt="2022-03-16T07:07:24.066">
+                           <EPICSField name="HOPR" value="1000000"/>
+                           <EPICSField name="LOPR" value="0"/>
+                           <EPICSField name="DRVL" value="0"/>
+                           <EPICSField name="DRVH" value="100000"/>
+                           <EPICSField name="OUT" value="@asyn(B-0, 0)WFGNode-Amplitude"/>
+                           <EPICSField name="DESC" value="Amplitude"/>
+                           <EPICSField name="DTYP" value="asynFloat64"/>
+                           <EPICSField name="SCAN" value="Passive"/>
+                        </EPICSRecord>
+                     </EPICSAttributes>
+                  </variable>
+                  <variable name="D1-I2:WFGNode-Amplitude_RBV" description="WFGNode-Amplitude_RBV"
+                            createdAt="2022-03-16T07:08:42.053"
+                            modifiedAt="2022-03-16T07:08:46.361">
+                     <direction>state</direction>
+                     <kind>continuous</kind>
+                     <external>true</external>
+                     <implementsFunction>D1-I2</implementsFunction>
+                     <importance>conventional</importance>
+                     <raisesAlarm>false</raisesAlarm>
+                     <archivingInfo enabled="false">
+                        <samplingFrequency>0.0</samplingFrequency>
+                     </archivingInfo>
+                     <storage>volatile</storage>
+                     <deployedOn>
+                        <component type="PCF">PCF001</component>
+                        <EPICSBasedUnit>
+                           <IOCName>iocD1-I2-PCF0CORE</IOCName>
+                           <recordName>D1-I2:WFGNode-Amplitude_RBV</recordName>
+                        </EPICSBasedUnit>
+                     </deployedOn>
+                     <transmittedOn>PON</transmittedOn>
+                     <presentOnScreens>true</presentOnScreens>
+                     <displayIndex>0</displayIndex>
+                     <EPICSAttributes>
+                        <EPICSRecord name="D1-I2:WFGNode-Amplitude_RBV" type="ai"
+                                     createdAt="2022-03-16T07:08:42.053"
+                                     modifiedAt="2022-03-16T07:08:46.361">
+                           <EPICSField name="DESC" value="WFGNode-Amplitude_RBV"/>
+                           <EPICSField name="DTYP" value="asynFloat64"/>
+                           <EPICSField name="SCAN" value="I/O Intr"/>
+                           <EPICSField name="INP" value="@asyn(B-0, 0)WFGNode-Amplitude_RBV"/>
+                        </EPICSRecord>
+                     </EPICSAttributes>
+                  </variable>
+                  <variable name="D1-I2:WFGNode-SignalType" description="WFGNode-SignalType"
+                            createdAt="2022-03-16T07:09:52.172"
+                            modifiedAt="2022-03-16T07:09:56.392">
+                     <direction>configuration</direction>
+                     <kind>discrete multi-state</kind>
+                     <external>true</external>
+                     <implementsFunction>D1-I2</implementsFunction>
+                     <importance>conventional</importance>
+                     <raisesAlarm>false</raisesAlarm>
+                     <archivingInfo enabled="false">
+                        <samplingFrequency>0.0</samplingFrequency>
+                     </archivingInfo>
+                     <storage>persistent</storage>
+                     <deployedOn>
+                        <component type="PCF">PCF001</component>
+                        <EPICSBasedUnit>
+                           <IOCName>iocD1-I2-PCF0CORE</IOCName>
+                           <recordName>D1-I2:WFGNode-SignalType</recordName>
+                        </EPICSBasedUnit>
+                     </deployedOn>
+                     <transmittedOn>PON</transmittedOn>
+                     <presentOnScreens>true</presentOnScreens>
+                     <displayIndex>0</displayIndex>
+                     <EPICSAttributes>
+                        <EPICSRecord name="D1-I2:WFGNode-SignalType" type="mbbo" createdAt="2022-03-16T07:09:52.172"
+                                     modifiedAt="2022-03-16T07:09:56.392">
+                           <EPICSField name="TWVL" value="2"/>
+                           <EPICSField name="FRVL" value="4"/>
+                           <EPICSField name="SXVL" value="6"/>
+                           <EPICSField name="THVL" value="3"/>
+                           <EPICSField name="EIVL" value="8"/>
+                           <EPICSField name="FVVL" value="5"/>
+                           <EPICSField name="ONVL" value="1"/>
+                           <EPICSField name="SVVL" value="7"/>
+                           <EPICSField name="ZRVL" value="0"/>
+                           <EPICSField name="DESC" value="WFGNode-SignalType"/>
+                           <EPICSField name="DTYP" value="asynInt32"/>
+                           <EPICSField name="SCAN" value="Passive"/>
+                           <EPICSField name="SXST" value="PULSE"/>
+                           <EPICSField name="OUT" value="@asyn(B-0, 0)WFGNode-SignalType"/>
+                           <EPICSField name="EIST" value="SAWTOOTH"/>
+                           <EPICSField name="FRST" value="SQUARE"/>
+                           <EPICSField name="ONST" value="SPLINE"/>
+                           <EPICSField name="FVST" value="TRIANGLE"/>
+                           <EPICSField name="THST" value="SINE"/>
+                           <EPICSField name="TWST" value="DC"/>
+                           <EPICSField name="ZRST" value="WAVEFORM"/>
+                           <EPICSField name="SVST" value="RUNNING"/>
+                        </EPICSRecord>
+                     </EPICSAttributes>
+                  </variable>
+                  <variable name="D1-I2:WFGNode-SignalTypeRBV" description="WFGNode-SignalTypeRBV"
+                            createdAt="2022-03-16T07:09:52.172"
+                            modifiedAt="2022-03-16T07:15:58.849">
+                     <direction>state</direction>
+                     <kind>discrete multi-state</kind>
+                     <external>true</external>
+                     <implementsFunction>D1-I2</implementsFunction>
+                     <importance>conventional</importance>
+                     <raisesAlarm>false</raisesAlarm>
+                     <archivingInfo enabled="false">
+                        <samplingFrequency>0.0</samplingFrequency>
+                     </archivingInfo>
+                     <storage>volatile</storage>
+                     <deployedOn>
+                        <component type="PCF">PCF001</component>
+                        <EPICSBasedUnit>
+                           <IOCName>iocD1-I2-PCF0CORE</IOCName>
+                           <recordName>D1-I2:WFGNode-SignalTypeRBV</recordName>
+                        </EPICSBasedUnit>
+                     </deployedOn>
+                     <transmittedOn>PON</transmittedOn>
+                     <presentOnScreens>true</presentOnScreens>
+                     <displayIndex>0</displayIndex>
+                     <EPICSAttributes>
+                        <EPICSRecord name="D1-I2:WFGNode-SignalTypeRBV" type="mbbi"
+                                     createdAt="2022-03-16T07:09:52.172"
+                                     modifiedAt="2022-03-16T07:15:58.849">
+                           <EPICSField name="FRST" value="SQUARE"/>
+                           <EPICSField name="SXST" value="PULSE"/>
+                           <EPICSField name="SXVL" value="6"/>
+                           <EPICSField name="SCAN" value="Passive"/>
+                           <EPICSField name="SVST" value="RUNNING"/>
+                           <EPICSField name="ZRVL" value="0"/>
+                           <EPICSField name="EIVL" value="8"/>
+                           <EPICSField name="DESC" value="WFGNode-SignalType"/>
+                           <EPICSField name="TWVL" value="2"/>
+                           <EPICSField name="THVL" value="3"/>
+                           <EPICSField name="FRVL" value="4"/>
+                           <EPICSField name="THST" value="SINE"/>
+                           <EPICSField name="TWST" value="DC"/>
+                           <EPICSField name="ONST" value="SPLINE"/>
+                           <EPICSField name="ZRST" value="WAVEFORM"/>
+                           <EPICSField name="FVVL" value="5"/>
+                           <EPICSField name="FVST" value="TRIANGLE"/>
+                           <EPICSField name="DTYP" value="asynInt32"/>
+                           <EPICSField name="SVVL" value="7"/>
+                           <EPICSField name="ONVL" value="1"/>
+                           <EPICSField name="EIST" value="SAWTOOTH"/>
+                           <EPICSField name="INP" value="@asyn(B-0, 0)WFGNode-SignalType_RBV"/>
+                        </EPICSRecord>
+                     </EPICSAttributes>
+                  </variable>
+               </variables>
+            </plantSystemIandC>
+         </plantSystemIandCs>
+      </subsystem>
+   </subsystems>
+   <templates/>
+   <program name="iocD1-I2-PCF0CORE" description="PCF Core IOC"
+            programmingLanguage="epicsioc">
+      <deployedOn>PCF001</deployedOn>
+      <prog xmlns="urn:x-iter:sdd:5.0.0">
+         <name>iocD1-I2-PCF0CORE</name>
+         <description>PCF Core IOC</description>
+         <proglang>epicsioc</proglang>
+         <type>IOC</type>
+      </prog>
+   </program>
+   <breakpointTables/>
+   <attribute attributeType="unit_type" value="b" IandCProject="52.B2-DAQ-DAN"
+              versionFrom="1"
+              description="unit_type"/>
+</IandCProject>

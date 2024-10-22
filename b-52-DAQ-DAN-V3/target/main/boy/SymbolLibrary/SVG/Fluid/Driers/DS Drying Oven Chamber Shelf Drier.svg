@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/*******************************************************************************
+* Copyright (c) 2010-2021 ITER Organization. 
+* All rights reserved. This program and the accompanying materials
+* are made available under the terms of the Eclipse Public License v1.0
+* which accompanies this distribution, and is available at
+* http://www.eclipse.org/legal/epl-v10.html
+******************************************************************************/
+-->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38pt" height="56pt" viewBox="0 0 38 56" version="1.1">
+<g id="surface1">
+<path style=" stroke:none;fill-rule:evenodd;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 37.277344 9.761719 L 32.707031 0.761719 L 5.332031 0.761719 L 0.773438 9.761719 L 0.773438 54.765625 L 37.277344 54.765625 Z M 37.277344 9.761719 "/>
+<path style="fill:none;stroke-width:0.72;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:3;" d="M 8.50098 14.197619 L 25.508699 14.197619 " transform="matrix(1.073042,0,0,1.058468,0.772621,-0.762097)"/>
+<path style="fill:none;stroke-width:0.72;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:3;" d="M 8.50098 18.449048 L 25.508699 18.449048 " transform="matrix(1.073042,0,0,1.058468,0.772621,-0.762097)"/>
+<path style="fill:none;stroke-width:0.72;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:3;" d="M 25.508699 22.700476 L 8.50098 22.700476 " transform="matrix(1.073042,0,0,1.058468,0.772621,-0.762097)"/>
+<path style="fill:none;stroke-width:0.72;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:3;" d="M 34.01984 9.9425 L 29.760629 1.439643 L 4.24905 1.439643 L 0.000760674 9.9425 L 0.000760674 52.460476 L 34.01984 52.460476 L 34.01984 9.9425 " transform="matrix(1.073042,0,0,1.058468,0.772621,-0.762097)"/>
+</g>
+</svg>

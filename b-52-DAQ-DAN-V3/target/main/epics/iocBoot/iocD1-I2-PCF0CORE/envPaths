@@ -1,0 +1,3 @@
+epicsEnvSet("IOC","iocD1-I2-PCF0CORE")
+epicsEnvSet("TOP","/home/codac-dev/55.B2_Prototype/b-52-DAQ-DAN-V3/target/main/epics")
+epicsEnvSet("EPICS_BASE","/opt/codac-6.3/epics")

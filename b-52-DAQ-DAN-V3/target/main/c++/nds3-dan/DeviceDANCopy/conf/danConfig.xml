@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+  DAN Configuration
+  Root: danApi
+  CODAC-VERSION: 6.0.0
+  WARNING: This is an automatically generated file. PLEASE DO NOT MODIFY.
+-->
+
+<danApi>
+	<version>1.0</version>
+	<ICprogram name="nds-dan">
+		<source name="SourceName">
+			<itemDanType>danDouble</itemDanType>
+			<maxTransferRate>100000</maxTransferRate>
+			<deviceInfo>
+				<deviceName>DeviceNDSDANCP</deviceName>
+				<deviceVersion>v1.0</deviceVersion>
+				<operationalMode>0</operationalMode>
+				<manufactureCode>N1134342</manufactureCode>
+			</deviceInfo>
+			<channelsInfo>
+				<channel number="0" variable="D1-I9:ACQ-DUMMY-BUFFER" label="CHANNEL0" status="ENABLE">
+					<calibration sourceUnit="Null" calibratedUnit="Volts" calibrationType="raw" />
+				</channel>
+					<channel number="1" variable="SamplesCounter" label="CHANNEL1" status="ENABLE">
+					<calibration sourceUnit="Null" calibratedUnit="Volts" calibrationType="raw" />
+				</channel>
+					<channel number="2" variable="SamplesCounter" label="CHANNEL2" status="ENABLE">
+					<calibration sourceUnit="Null" calibratedUnit="Volts" calibrationType="raw" />
+				</channel>
+					<channel number="3" variable="SamplesCounter" label="CHANNEL3" status="ENABLE">
+					<calibration sourceUnit="Null" calibratedUnit="Volts" calibrationType="raw" />
+				</channel>
+			</channelsInfo>
+		</source>
+		<danStreamer name="DAN0">
+			<link>ALL</link>
+			<internal>
+				<!-- Commented as it does not work correctly in CCS-6.0.0
+				<advanced>
+					<loopDelay>1000</loopDelay>
+					<profMonitoring>2</profMonitoring>
+					<maxnewDataTimeout>60</maxnewDataTimeout>
+				</advanced>
+				-->
+				<danInterface>eno1</danInterface>
+				<servers>
+					<policy >IF_FAIL_NEXT</policy>
+					<server>10.106.142.215:9999</server>
+				</servers>			
+			</internal>
+		</danStreamer>
+	</ICprogram>
+</danApi>

@@ -1,0 +1,10 @@
+This projects consists of two NDS Device Drivers, EPICS IOC 
+application and HMI in CSS. 
+in nds3 directory NDS Driver for Data WaveForm Generation,
+and interface for RAW Data Acqusition from FlexRIO 7976R. 
+in nds-dan directory a driver for data archiving via 
+DAN network is located. 
+
+in boy/mimics directory the test HMI screen is presented. 
+It has been tested. 
+

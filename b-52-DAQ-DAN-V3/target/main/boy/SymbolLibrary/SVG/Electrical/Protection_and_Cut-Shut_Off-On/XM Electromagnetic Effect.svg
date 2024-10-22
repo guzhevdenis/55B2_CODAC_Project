@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/*******************************************************************************
+* Copyright (c) 2010-2021 ITER Organization. 
+* All rights reserved. This program and the accompanying materials
+* are made available under the terms of the Eclipse Public License v1.0
+* which accompanies this distribution, and is available at
+* http://www.eclipse.org/legal/epl-v10.html
+******************************************************************************/
+-->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20pt" height="20pt" viewBox="0 0 20 20" version="1.1">
+<g id="surface1">
+<path style=" stroke:none;fill-rule:evenodd;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 0.777344 1.042969 L 0.789062 1.042969 L 0.789062 1.050781 L 0.777344 1.050781 Z M 0.777344 1.042969 "/>
+<path style=" stroke:none;fill-rule:evenodd;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 19.148438 18.746094 L 19.160156 18.746094 L 19.160156 18.757812 L 19.148438 18.757812 Z M 19.148438 18.746094 "/>
+<path style="fill:none;stroke-width:0.999997;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:3;" d="M 4.251112 10.501014 C 1.825919 10.501014 -0.136644 12.40602 -0.136644 14.757277 C -0.136644 17.104785 1.825919 19.009791 4.251112 19.009791 " transform="matrix(-1.080777,0.000000000000000128,-0.000000000000000132,-1.041663,14.481224,25.270552)"/>
+<path style="fill:none;stroke-width:0.999997;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:3;" d="M 0.00124734 19.00811 L 4.250011 19.00811 " transform="matrix(0.000000000000000066,1.041663,-1.080777,0.000000000000000064,30.512284,1.041669)"/>
+<path style="fill:none;stroke-width:0.999997;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:3;" d="M -0.000864003 19.00811 L 4.25165 19.00811 " transform="matrix(0.000000000000000066,1.041663,-1.080777,0.000000000000000064,30.512284,14.329025)"/>
+</g>
+</svg>

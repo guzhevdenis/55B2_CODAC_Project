@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/*******************************************************************************
+* Copyright (c) 2010-2021 ITER Organization. 
+* All rights reserved. This program and the accompanying materials
+* are made available under the terms of the Eclipse Public License v1.0
+* which accompanies this distribution, and is available at
+* http://www.eclipse.org/legal/epl-v10.html
+******************************************************************************/
+-->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20pt" height="56pt" viewBox="0 0 20 56" version="1.1">
+<g id="surface1">
+<path style=" stroke:none;fill-rule:evenodd;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 0.777344 1.042969 L 0.785156 1.042969 L 0.785156 1.0625 L 0.777344 1.0625 Z M 0.777344 1.042969 "/>
+<path style=" stroke:none;fill-rule:evenodd;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 19.164062 55.167969 L 19.171875 55.167969 L 19.171875 55.1875 L 19.164062 55.1875 Z M 19.164062 55.167969 "/>
+<path style="fill-rule:evenodd;fill:rgb(0%,0%,0%);fill-opacity:1;stroke-width:0.719998;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:3;" d="M 0.567576 52.47088 C 0.567576 52.312509 0.441076 52.187286 0.285661 52.187286 C 0.126633 52.187286 0.000133006 52.312509 0.000133006 52.47088 C 0.000133006 52.625567 0.126633 52.75079 0.285661 52.75079 C 0.441076 52.75079 0.567576 52.625567 0.567576 52.47088 Z M 0.567576 52.47088 " transform="matrix(1.080781,0,0,1.060607,9.886575,-50.014261)"/>
+<path style="fill:none;stroke-width:0.719998;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:3;" d="M 0.000557257 52.750234 L 0.000557257 35.830383 " transform="matrix(1.080781,0,0,1.060607,10.190804,-27.830078)"/>
+<path style="fill:none;stroke-width:0.719998;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:3;" d="M 8.500945 48.500303 C 8.547931 50.00298 7.749174 51.413581 6.41189 52.179652 C 5.078219 52.94204 3.422877 52.94204 2.085592 52.179652 C 0.751921 51.413581 -0.0468353 50.00298 0.000150354 48.500303 C -0.0468353 46.997625 0.751921 45.587024 2.085592 44.824636 C 3.422877 44.058565 5.078219 44.058565 6.41189 44.824636 C 7.749174 45.587024 8.547931 46.997625 8.500945 48.500303 Z M 8.500945 48.500303 " transform="matrix(1.080781,0,0,1.060607,5.597494,-45.877259)"/>
+</g>
+</svg>

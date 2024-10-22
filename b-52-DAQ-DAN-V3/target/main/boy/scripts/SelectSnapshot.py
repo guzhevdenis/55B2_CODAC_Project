@@ -1,0 +1,9 @@
+import SelectConfHelper
+
+WIDGET_TEXT_FILE = "Text Input Template_1"
+
+ENV_SUP_CONFIG_PATH = "SUP_CONFIG_PSPS_PATH";
+DEFAULT_SUP_CONFIG_PATH = "."
+
+SelectConfHelper.doAction(display, WIDGET_TEXT_FILE, WIDGET_TEXT_FILE, ENV_SUP_CONFIG_PATH, DEFAULT_SUP_CONFIG_PATH)
+    
